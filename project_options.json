@@ -1,0 +1,6 @@
+{
+	"libname"         : "math",
+	"libname_upper"   : "MATH",
+	"libname_camel"   : "Math",
+	"lib_abi"		  : "TYCHO_MATH_ABI"
+}	
