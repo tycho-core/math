@@ -1,3 +1,6 @@
 cmake_minimum_required (VERSION 2.8)
 
-tycho_add_library(math "" "libs")
+tycho_add_library("math" "tycore" "libs")
+
+
+
