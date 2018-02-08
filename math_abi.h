@@ -37,4 +37,10 @@
 #endif // TYCHO_PC
 
 
+#ifdef __cplusplus
+#include "core/memory/new.h"
+#include "core/memory.h"
+#include "core/debug/assert.h"
+#endif 
+
 #endif // _MATH_ABI_H_4C7E8D07_188D_48D2_A9E5_F3188FE62FF8
