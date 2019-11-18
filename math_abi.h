@@ -19,10 +19,14 @@
 #if TYCHO_PC
 
 // DLL interface
-#ifdef TYCHO_MATH_EXPORTS
-#define TYCHO_MATH_ABI __declspec(dllexport)
+#ifdef TYCHO_MATH_STATIC_LIB
+#	define TYCHO_MATH_ABI
 #else
-#define TYCHO_MATH_ABI __declspec(dllimport)
+#	ifdef TYCHO_MATH_EXPORTS
+#		define TYCHO_MATH_ABI __declspec(dllexport)
+#	else
+#		define TYCHO_MATH_ABI __declspec(dllimport)
+#	endif
 #endif 
 
 // disable a few warnings globally. should move these into specific cpp's to avoid polluting
