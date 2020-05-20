@@ -42,8 +42,8 @@
 
 
 #ifdef __cplusplus
-#include "core/memory/new.h"
-#include "core/memory.h"
+//#include "core/memory/new.h"
+//#include "core/memory.h"
 #include "core/debug/assert.h"
 #endif 
 
