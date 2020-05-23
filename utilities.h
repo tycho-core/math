@@ -174,6 +174,14 @@ namespace math
 		return v2;
 	}
 
+	template <class T>
+    inline T abs(T v1)
+    {
+        if (v1 < 0)
+            return -v1;
+        return v1;
+    }
+
 	
 } // end namespace
 } // end namespace

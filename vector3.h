@@ -61,6 +61,9 @@ namespace math
 		T    length() const;
 		this_type normalized() const;
 		this_type& normalize();
+        this_type  max(const this_type& v) const;
+        this_type  min(const this_type& v) const;
+        this_type  abs() const;
 
 	private:
 		T m_x;

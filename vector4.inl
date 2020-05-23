@@ -214,3 +214,23 @@ vector4<T>& vector4<T>::normalize()
 { 
 	return *this /= length(); 
 } 
+
+template <typename T>
+vector4<T> vector4<T>::max(const vector4<T>& v) const
+{
+    return vector4<T>(math::max(m_x, v.m_x), math::max(m_y, v.m_y), math::max(m_z, v.m_z),
+                      math::max(m_w, v.m_w));
+}
+
+template <typename T>
+vector4<T> vector4<T>::min(const vector4<T>& v) const
+{
+    return vector4<T>(math::min(m_x, v.m_x), math::min(m_y, v.m_y), math::min(m_z, v.m_z),
+                      math::min(m_w, v.m_w));
+}
+
+template <typename T>
+vector4<T> vector4<T>::abs() const
+{
+    return vector4<T>(math::abs(m_x), math::abs(m_y), math::abs(m_z), math::abs(m_w));
+}
