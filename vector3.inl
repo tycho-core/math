@@ -191,3 +191,15 @@ vector3<T> vector3<T>::abs() const
 {
     return vector3<T>(math::abs(m_x), math::abs(m_y), math::abs(m_z));
 }
+
+template <typename T>
+bool operator==(const T& lhs, const T& rhs)
+{
+    return (lhs.x() == rhs.x()) && (lhs.y() == rhs.y()) && (lhs.z() == rhs.z());
+}
+
+template <typename T>
+bool operator!=(const T& lhs, const T& rhs)
+{
+    return !(lhs == rhs);
+}
